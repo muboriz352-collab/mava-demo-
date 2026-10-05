@@ -1,0 +1,17 @@
+/* Glass highlights without full-screen backdrop filters or repainted shadows. */
+.header{background:linear-gradient(120deg,rgba(255,255,255,.97),rgba(240,247,231,.95) 52%,rgba(255,255,255,.97));border:1px solid #fff;border-top:0;box-shadow:inset 0 -1px 0 #cfdccb99,0 3px 14px #183d3210;isolation:isolate}
+.header nav a{border-radius:50px;padding:10px 14px;border:1px solid #ffffffb8;background:linear-gradient(145deg,#ffffffb8,#ffffff30);box-shadow:inset 0 1px 0 #fff;color:#173e32}
+.pill,.filters button,#tea-controls button,.quantity button,.close-button{background:linear-gradient(155deg,#fff9,#e7efda80);border:1px solid #ffffffda;box-shadow:inset 0 1px 0 #fff,0 2px 6px #143e3210;transition:transform .16s ease,background-color .16s ease;color:#153d32}
+.pill.dark,.cart-button,.filters button.active{background:linear-gradient(155deg,#41715eee,#153e32f5 65%);border:1px solid #789c87;box-shadow:inset 0 1px 0 #ffffff55,0 3px 8px #153e3218;color:white}
+.plus{background:linear-gradient(145deg,#487763,#153e32)!important;border:1px solid #93b19a;box-shadow:inset 0 1px 0 #ffffff66!important}
+.pill:hover{transform:translateY(-1px)}
+dialog::backdrop{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:#10281d70}
+dialog{box-shadow:0 12px 40px #10281d25}dialog[open],.product{animation:none!important}
+.product{contain:layout paint;transition:none}
+.product-image img{transition:transform .22s ease!important;filter:none!important}
+@media(hover:hover) and (pointer:fine){.product-image:hover img[data-origin=enhanced]{transform:translateY(-4px) rotate(0) scale(1.015)}}
+.modal-open .marquee>div{animation-play-state:paused!important}
+.modal-open .product-image img{transition:none!important}
+html{scrollbar-gutter:stable}
+@media(max-width:700px){.header nav{gap:4px}.header nav a{padding:9px 7px;font-size:11px}.header{gap:7px}.product-image img{transform:none!important;transition:none!important}.pill{transition:none}.header .brand{flex-shrink:0}}
+@media(prefers-reduced-motion:reduce){.pill,.product-image img{transition:none!important}}

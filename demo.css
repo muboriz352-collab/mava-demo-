@@ -1,0 +1,5 @@
+.demo-notice{margin:18px auto!important;max-width:1240px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 22px!important;border-radius:16px;line-height:1.55}
+.demo-notice strong{display:block;color:#153e33;margin-bottom:3px}
+.demo-notice p{margin:0}
+.demo-notice button{flex-shrink:0}
+@media(max-width:700px){.demo-notice{margin:14px!important;align-items:stretch;flex-direction:column;padding:16px!important}.demo-notice button{align-self:flex-start}}
